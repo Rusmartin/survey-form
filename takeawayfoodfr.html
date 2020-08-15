@@ -1,0 +1,117 @@
+<DOCTYPE html>
+<html>
+<head>
+    <title>Nourriture à emporter</title>
+    <link rel="stylesheet" type="text/css" href="survey.css">
+</head>    
+<body>
+    <div class="container">
+        <div class="languages"><h5><a href="https://codepen.io/martin-ruscade/full/XWbKrgo" target="_blank">en</a> - <a href="https://codepen.io/martin-ruscade/full/abOwEGr">fr</a></h5></div>
+    <div>
+        <h1 id="title">Enquête sur la nourriture à emporter</h1>
+    </div>    
+        <h4><p id="description">Parlez nous un peu de vous! </p></h4>
+    <form id="survey-form" netlify>
+        <label id="name-label" for="name"><b>Nom:</b></label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            class="form-control"
+            placeholder="Entrer votre nom"
+            required/>
+    <div class="form-group">
+          <label id="email-label" for="email"><b>Email:</b></label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            class="form-control"
+            placeholder="Enter votre Email"
+            required/>
+       </div> 
+            <label id="number-label" for="age"><b>Age:</b></label>
+            <input type="number"
+                   name="age"
+                   id="number"
+                   class="form-control"
+                   placeholder="Enter votre age"
+                   min="10" 
+                   max="99"
+                   required>
+        <label for="dropdown"><b>Quel est votre préféré?</b></label>
+    <div class="form-control">
+        <select id="dropdown" name="select" required>
+            <option value="select">Select</option>
+            <option value="pizza">Pizza</option>
+            <option value="burger">Burger</option>
+            <option value="sushi">Sushi</option>
+            <option value="chineese">Chinois</option>
+            <option value="mexican">Mexicain</option>
+            <option value="kebab">Kebab</option>
+            <option value="indian">Indien</option>
+        </select>
+    </div>
+        <p><b>Combien de fois par mois mangez vous de la nourriture à emporter par mois?</b></p>
+      <ul>
+          <div class="times">
+          <div class="one">
+       <li>
+        <input type="radio" id="one" name="rate" value="1 time">
+        <label for="one">Une fois</label></li>
+        <li>
+        <input type="radio" id="one" name="rate" value="2 times">
+        <label for="two">Deux fois</label></li>
+        <li>
+        <input type="radio" id="one" name="rate" value="3 times">
+        <label for="three">Trois fois</label></li>
+          </div>
+          <div class="two">
+          <li>
+        <input type="radio" id="two" name="rate" value="4 times">
+        <label for="four">Quatre fois</label></li>
+        <li>
+        <input type="radio" id="two" name="rate" value="5 times">
+        <label for="four">Cinq fois</label></li>
+        <li>
+        <input type="radio" id="two" name="rate" value="more">
+        <label for="more">Plus</label></li>
+          </div>
+              </div>
+        </ul>
+      <p><b>Quel sont les critères les plus important quand il s'agit de nourriture à emporter?</b></p>
+      <ul>
+          <div class="one">
+        <li><input type="checkbox" id="quality" name="quality" value="quality">
+      <label for="quality">Qualité</label></li>
+        <li><input type="checkbox" id="quantity" name="quantity" value="quantity">
+  <label for="quantity">Quantité</label></li>
+        <li><input type="checkbox" id="cleanliness" name="cleanliness" value="cleanliness">
+  <label for="cleanliness">Propreté</label></li>
+            </div>
+          <div class="two">
+        <li><input type="checkbox" id="service" name="service" value="service">
+  <label for="service">Service</label></li>
+        <li><input type="checkbox" id="price" name="price" value="Boat">
+  <label for="price">Prix</label></li>
+        <li><input type="checkbox" id="choice" name="choice" value="Boat">
+  <label for="choice">Choix</label></li>
+          </div>
+        </ul>
+        <p id="last"><b>Commentaires ou suggestions?</b></p>
+        <div class="form-control">
+      <textarea
+        id="comments"
+        class="input-textarea"
+        name="comment"
+        placeholder="Enter votre commentaire ici..."
+      ></textarea>
+        </div>
+        <button type="submit" id="submit" class="submit-button">
+        Envoyer
+        </button>
+    </form>
+    </div>
+    <p id=copyright>&copy; Martin Ruscade 2020<p>
+</body> 
+</html>

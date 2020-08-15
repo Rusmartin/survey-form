@@ -1,0 +1,97 @@
+body {
+    text-align: center;
+    font-size: 1.5em;
+  font-family: monospace;
+    background: url("https://i.postimg.cc/4N30dPpV/burger.jpg");
+    background-attachment: fixed;
+    background-size: 75px;
+}
+.container {
+    background-color: rgba(255, 255, 26, 0.934);
+    margin: 5% 15% 5% 15%;
+    border-radius: 15px;
+    padding: 0.5em;
+    Filter: saturate(70%);
+}
+.languages {
+    text-align: right;
+}
+a:link{
+    text-decoration: none;
+}
+a:hover {
+    color: red;
+}
+#title {
+    margin: 0;
+}
+.form-control {
+    background-color:;
+    border-radius: 10px;
+    width: 90%;
+    height: 3em;
+    margin: 1em;
+    display: block;
+    margin: 1em auto 1em auto;
+}
+select {
+    width: 100%;
+    height: 3em;
+    border-radius: 10px;
+}
+textarea {
+    width: 100%;
+    border-radius: 10px;
+    text-align: center;
+}
+button {
+    height: 50px;
+    width: 100px;
+    border-radius: 20px;
+    margin: 0;
+}
+li {
+ list-style-type: none;
+  text-align: left;
+} 
+#copyright {
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    font-size: 0.70em;
+    width: 70%;
+    margin: auto;
+}
+#number {
+  Width:50% ;
+ } 
+.times{
+    display: block;
+    margin-right: 20%;
+    border:  1px;
+}
+.one {
+    display: inline-block;
+}
+.two {
+    display: inline-block;
+}
+input {
+  text-align: center;
+}
+
+
+
+
+@media only screen and (max-width: 650px) {
+    
+    .container {
+    margin: 15% 0 15% 0;
+    }
+    #last {
+        padding: 20 0 0 0;
+    }
+    #copyright {
+        width: 100%;
+    }
+}
